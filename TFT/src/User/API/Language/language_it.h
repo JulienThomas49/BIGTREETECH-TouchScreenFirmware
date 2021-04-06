@@ -10,7 +10,7 @@
     #define STRING_PERSISTENT_INFO        "Mostra barra di stato"
     #define STRING_FILE_LIST_MODE         "File in modalità lista"
     #define STRING_ACK_NOTIFICATION       "Tipo di popup"
-    #define STRING_EMULATE_M600           "Emulate M600"
+    #define STRING_EMULATE_M600           "Emula M600"
     #define STRING_SERIAL_ALWAYS_ON       "Seriale sempre accesa"
     #define STRING_MARLIN_FULLSCREEN      "Marlin a schermo intero"
     #define STRING_MARLIN_SHOW_TITLE      "Mostra titolo in Marlin"
@@ -346,5 +346,6 @@
     #define STRING_HEAT_HOTEND            "Scaldo l'hotend a %d℃?"
     #define STRING_Z_ALIGN                "Allinea Z"
     #define STRING_MACROS                 "Macros"
+    #define STRING_MESH_VALID             "Mesh Validation"
 
 #endif
