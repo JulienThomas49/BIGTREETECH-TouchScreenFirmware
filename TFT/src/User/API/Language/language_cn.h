@@ -38,10 +38,11 @@
     #define STRING_END_GCODE_ENABLED      "执行打印后结束Gcode"
     #define STRING_CANCEL_GCODE_ENABLED   "中断打印Gcode"
 
-    // Machine Parameter Settings
+    // Machine Parameter Settings - Param Title (ordered by gcode)
     #define STRING_STEPS_SETTING          "电机每毫米脉冲数(Steps/mm)"
-    #define STRING_MAXFEEDRATE            "最大移动速度"
+    #define STRING_FILAMENT_SETTING       "Filament Diameter"
     #define STRING_MAXACCELERATION        "最大加速度"
+    #define STRING_MAXFEEDRATE            "最大移动速度"
     #define STRING_ACCELERATION           "加速度"
     #define STRING_JERK                   "Jerk"
     #define STRING_JUNCTION_DEVIATION     "Junction Deviation"
@@ -50,13 +51,18 @@
     #define STRING_FWRECOVER              "FW Retraction Recover"
     #define STRING_RETRACT_AUTO           "FW自动回抽"
     #define STRING_HOTEND_OFFSET          "第2个喷头的偏移量"
+    #define STRING_STEALTH_CHOP           "TMC StealthChop"
+    #define STRING_DELTA_CONFIGURATION    "Delta Configuration"
+    #define STRING_DELTA_TOWER_ANGLE      "Tower Angle Trim"
+    #define STRING_DELTA_ENDSTOP          "Endstop Adjustments"
     #define STRING_PROBE_OFFSET           "探针偏移量"
     #define STRING_LIN_ADVANCE            "Linear Advance"
-    #define STRING_FILAMENT_SETTING       "Filament Diameter"
     #define STRING_CURRENT_SETTING        "TMC驱动电流设置"
-    #define STRING_BUMP_SENSITIVITY       "TMC堵转检测灵敏度"
     #define STRING_HYBRID_THRESHOLD       "TMC混合阈值"
-    #define STRING_STEALTH_CHOP           "TMC StealthChop"
+    #define STRING_BUMP_SENSITIVITY       "TMC堵转检测灵敏度"
+    #define STRING_MBL_OFFSET             "MBL Offset"
+
+    // Machine Parameter Settings - Param Attributes (ordered by gcode)
     #define STRING_PRINT_ACCELERATION     "打印加速度"
     #define STRING_RETRACT_ACCELERATION   "回抽加速度"
     #define STRING_TRAVEL_ACCELERATION    "空载加速度"
@@ -68,7 +74,6 @@
     #define STRING_SWAP_RECOVER_LENGTH    "换料时额外挤出的长度"
     #define STRING_RECOVER_FEEDRATE       "FW挤出速度"
     #define STRING_SWAP_RECOVER_FEEDRATE  "换料时挤出的速度"
-    #define STRING_MBL_OFFSET             "MBL Offset"
 
     // Save / Load
     #define STRING_SAVE                   "保存参数"
@@ -341,13 +346,14 @@
     #define STRING_FILAMENT_COST          "\n已使用耗材成本: %1.2f"
     #define STRING_NO_FILAMENT_STATS      "\n无耗材历史数据"
     #define STRING_CLICK_FOR_MORE         "点击查看详情"
-    #define STRING_EXT_TEMPLOW            "喷头温度低于最小挤出问题 (%d℃)."
+    #define STRING_EXT_TEMPLOW            "喷头温度低于最小挤出温度 (%d℃)."
     #define STRING_HEAT_HOTEND            "加热喷头到%d℃?"
-    #define STRING_DESIRED_TEMPLOW        "Hotend temperature is below\ndesired temperature (%d℃)."
-    #define STRING_WAIT_HEAT_UP           "Wait for it to heat up."
-    #define STRING_NOZZLE_STABILIZING     "Wait, nozzle stabilizing..."
+    #define STRING_DESIRED_TEMPLOW        "喷头温度过低\n设置的温度为 (%d℃)."
+    #define STRING_WAIT_HEAT_UP           "等待加热完成."
     #define STRING_Z_ALIGN                "Z Align"
-    #define STRING_MACROS                 "Macros"
+    #define STRING_MACROS                 "宏指令"
     #define STRING_MESH_VALID             "调平测试"
+    #define STRING_CONNECT_PROBE          "开启此操作前请先连接探头, 操作完成后请断开连接"
+    #define STRING_CALIBRATION            "校准"
 
 #endif
