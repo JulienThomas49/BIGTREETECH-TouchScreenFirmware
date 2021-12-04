@@ -1,7 +1,7 @@
 #ifndef _CONFIGURATION_H_
 #define _CONFIGURATION_H_
 
-#define CONFIG_VERSION 20211111
+#define CONFIG_VERSION 20211130
 
 //====================================================================================================
 //=============================== Settings Configurable On config.ini ================================
@@ -1258,11 +1258,26 @@
 #define TERMINAL_KEYBOARD_LAYOUT 0  // Default: 0
 
 /**
+ * Progress bar color
+ * The color of the progress bar during print
+ *   Options: [Orange: 0, Yellow: 1, Red: 2, Green: 3, Blue: 4, Cyan: 5, Magenta: 6, Purple: 7, Lime: 8, Gray: 9]
+ */
+#define PROGRESS_BAR_COLOR 0  // Default: 0
+
+/**
  * Progress Bar Layout (Printing menu)
  * Uncomment to enable a progress bar with 10% markers.
  * Comment to enable a standard progress bar.
  */
 //#define MARKED_PROGRESS_BAR  // Default: commented (disabled)
+
+/**
+ * The color of the values on the status screen
+ * Some topics require the inverse display of color values on live status screen icons.
+ * Uncomment for example: THEME_Rep Rap Firmware Dark 
+ * Comment for standard color
+ */
+//#define VALUE_COLOR // Default: commented (disabled)
 
 /**
  * Live Text Background Color Rendering Technique (Printing menu and Status Screen menu)
